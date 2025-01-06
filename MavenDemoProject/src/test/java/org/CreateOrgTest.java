@@ -7,6 +7,8 @@ public class CreateOrgTest {
 @Test
 public void createOrg()
 {
+	String url = System.getProperty("url");
+	System.out.println(url);
 	Reporter.log("Org created",true);
 }
 
