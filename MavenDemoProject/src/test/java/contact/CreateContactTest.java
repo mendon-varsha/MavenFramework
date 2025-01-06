@@ -21,5 +21,11 @@ public void createContactWithIndustry()
 {
 	Reporter.log("Contact created with industry",true);
 }
+
+@Test
+public void contactList()
+{
+	Reporter.log("All contacts are listed",true);
+}
 }
 
