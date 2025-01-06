@@ -15,5 +15,11 @@ public void createContactWithDate()
 {
 	Reporter.log("Contact created with date",true);
 }
+
+@Test
+public void createContactWithIndustry()
+{
+	Reporter.log("Contact created with industry",true);
+}
 }
 
