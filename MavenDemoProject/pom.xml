@@ -49,4 +49,25 @@
 			<version>1.18.28</version>
 		</dependency>
 	</dependencies>
+	
+	<profiles>
+	<profile>
+	<id>smoke</id>
+	<build>
+	<plugins>
+	<plugin>
+	<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.5.2</version>
+				<configuration>
+				<suiteXmlFiles>
+				<suiteXmlFile>smokeExecution.xml</suiteXmlFile>
+				</suiteXmlFiles>
+				</configuration>
+	</plugin>
+	</plugins>
+	</build>
+	</profile>
+	
+	</profiles>
 </project>

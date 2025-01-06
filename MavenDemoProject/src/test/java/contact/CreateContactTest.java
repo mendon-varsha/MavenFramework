@@ -4,10 +4,20 @@ import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 public class CreateContactTest {
+	
 @Test
+
+
 public void createContact()
 {
+	String url = System.getProperty("url");
+	String username = System.getProperty("username");
+	String contact = System.getProperty("contact");
 	Reporter.log("Contact created",true);
+	System.out.println(url);
+	System.out.println(username);
+	System.out.println(contact);
+	
 }
 
 @Test
